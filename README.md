@@ -37,6 +37,15 @@ ssh -T git@github.com #验证身份
 
 上传项目
 
+设置配置文件_config.yml:
+```
+deploy:
+  type: git
+  #  repository: https://github.com/h0cksr/h0cksr.github.io.git
+  repo: https://从Settings:Developersettings:Personalaccesstokens获取的token@github.com/h0cksr/h0cksr.github.io.git
+  branch: master
+```
+
 ```bash
 npm install hexo-deployer-git --save
 hexo clean #清除之前生成的东西
